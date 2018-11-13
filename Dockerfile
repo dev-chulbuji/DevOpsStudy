@@ -1,6 +1,5 @@
 FROM node:latest
 
-MAINTAINER ladmusician.kim <ladmusician.kim@gmail.com>
 ENV NODE_ENV devlopement
 
 RUN mkdir -p /usr/src/app
