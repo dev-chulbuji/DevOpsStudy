@@ -1,7 +1,7 @@
 FROM node:latest
 
 MAINTAINER ladmusician.kim <ladmusician.kim@gmail.com>
-ENV NODE_ENV=devlopement
+ENV NODE_ENV devlopement
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
@@ -13,6 +13,6 @@ RUN npm install
 
 COPY server.js .
 
-EXPOSE 8080
+EXPOSE 80 443
 
 CMD ["pm2-runtime", "process.yml"]
